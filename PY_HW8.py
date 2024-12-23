@@ -89,13 +89,10 @@ def dir_walker(aim_path: str, total_dct: dict = None) -> dict[str, dict[str]]:
 def main():
 
     tst_path = str(Path.cwd()) + '\\'
-
     result = dir_walker(tst_path)
     jsn_writer(result, os.getcwd(), 'result1')
     pcl_writer(result, os.getcwd(), 'result1')
     csv_writer(result, os.getcwd(), 'result1')
 
-
 if __name__ == '__main__':
     main()
-
